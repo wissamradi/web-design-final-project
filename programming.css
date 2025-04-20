@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f1a;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #00ffe7;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00ffe7, #ae52ff);
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background: linear-gradient(145deg, #1a1a2f, #1d1d3b);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #232343;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #00ffe7;
+}
+
+.course-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  color: #ae52ff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.course-description {
+  color: #c0c0c0;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #90caf9;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.course-price {
+  background: #00ffe7;
+  color: #1a1a2f;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.course-level {
+  background: #ae52ff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+}
+
+.course-duration {
+  background-color:#6718ef;
+  
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+.buy-now-btn {
+  background: linear-gradient(to right, #00ffe7, #ae52ff);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #1a1a2f;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transform: translateY(3px);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

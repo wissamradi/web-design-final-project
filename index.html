@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="design.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <img src="https://wallpaperaccess.com/full/314785.jpg" class="logo" alt="Logo" />
+    
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html" target="_blank">About</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li><a href="login signup.html" target="_blank">Login/Signup</a></li>
+      <li><a href="Contact.html" target="_blank">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  
+  <header class="learn">
+    <h2>Learn Anytime, Anywhere</h2>
+    <p>Choose from hundreds of online courses to boost your skills.</p>
+    <a href="AllCourses.html" target="_blank" class="allCourses-button">Browse Courses</a>
+  </header>
+  <div class="course-bar">
+    <a href="programming.html" target="_blank" class="course-type">Programming</a>
+    <a href="DesignCourses.html" target="_blank" class="course-type">Design</a> 
+    <a href="business.html" target="_blank" class="course-type">Business</a>
+    <a href="DataScience.html" target="_blank" class="course-type">Data Science</a>
+    <a href="languages.html"  target="_blank" class="course-type">Languages</a>
+  </div>
+
+  <main>
+    <h1 class="welcome-text">Welcome to Our Learning Platform</h1>
+  </main>
+
+<section class="featured-courses">
+  <h2>Featured Courses</h2>
+  <div class="course-cards">
+    <div class="course-card">
+      <h3>Full Stack Web Development</h3>
+      <p>Learn HTML, CSS, JavaScript, and backend technologies to build full web apps.</p>
+    </div>
+    <div class="course-card">
+      <h3>Graphic Design Basics</h3>
+      <p>Master the fundamentals of graphic design and visual communication.</p>
+    </div>
+    <div class="course-card">
+      <h3>Data Science with Python</h3>
+      <p>Analyze, visualize, and understand data using powerful tools like Pandas & Matplotlib.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="why-us">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li><i class="fas fa-check-circle"></i> Expert Instructors</li>
+    <li><i class="fas fa-check-circle"></i> Lifetime Access</li>
+    <li><i class="fas fa-check-circle"></i> Certificates on Completion</li>
+    <li><i class="fas fa-check-circle"></i> Career Support</li>
+  </ul>
+</section>
+
+
+<section class="newsletter">
+  <h2>Stay Updated!</h2>
+  <p>Subscribe to get the latest course updates and offers.</p>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <a id="maill" href="mailto:info&techMaster.com">Email: info&techMaster.com</a>
+        <p style="margin-top: 10px;">Phone: +961 81 904 092</p>
+        <p>Location: Baalback, Lebanon</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="testiminational.html" target="_blank">Testiminational</a></li>
+          <li><a href="Faq.html" target="_blank">FAQ</a></li>
+          <li><a href="Contact.html" target="_blank">Contact</a></li>
+          <li><a href="survey.html" target="_blank">Survey</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1BjDpu1tQ2/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/radi.wissam?igsh=NWtxN2luOWJ2dWtj"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 CourseSite. All rights reserved.</div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>

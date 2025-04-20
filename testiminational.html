@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #7cb7fc;
+    }
+    .testimonial-card {
+      background-color: #f0f7ff;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-role {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5">What Our Students Say</h2>
+  <div class="row g-4">
+
+   
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="testimonial-img">
+        <div class="testimonial-name">Sarah K.</div>
+        <div class="testimonial-role">Web Design Student</div>
+        <p class="testimonial-text">"This platform made learning so easy and fun! I landed a freelance gig right after finishing the course!"</p>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="testimonial-img">
+        <div class="testimonial-name">Ali M.</div>
+        <div class="testimonial-role">Business Course Student</div>
+        <p class="testimonial-text">"Well-structured courses and excellent instructors. I now feel confident launching my own startup."</p>
+      </div>
+    </div>
+
+   
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="testimonial-img">
+        <div class="testimonial-name">Lina H.</div>
+        <div class="testimonial-role">Data Science Learner</div>
+        <p class="testimonial-text">"Their Data Science track helped me build a portfolio and apply to international jobs."</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

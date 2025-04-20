@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #badafa;
+    }
+    .survey-form {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgb(254, 254, 254);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="survey-form">
+      <h2 class="mb-4 text-center">Survey Form</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Age</label>
+          <input type="number" class="form-control" placeholder="Your age" min="1" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">How satisfied are you with our service?</label>
+          <select class="form-select" required>
+            <option selected disabled>Choose one</option>
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="unsatisfied">Unsatisfied</option>
+            <option value="very-unsatisfied">Very Unsatisfied</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">What features do you like the most?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="design" id="feature1">
+            <label class="form-check-label" for="feature1">Design</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="usability" id="feature2">
+            <label class="form-check-label" for="feature2">Usability</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="performance" id="feature3">
+            <label class="form-check-label" for="feature3">Performance</label>
+          </div>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Submit Survey</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
