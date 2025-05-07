@@ -139,5 +139,34 @@ body {
 
   .section-title {
     font-size: 2rem;
+  }}
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
-}
+  
+  .back-button:hover {
+    background: linear-gradient(90deg, #94b8cb, #57e3ff);
+  }
+  
+  .back-button:active {
+    background-color: #3e8e41;
+  }
+  @media screen and (max-width: 600px) {
+    .back-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
